@@ -48,6 +48,6 @@
     "gulp-uglify": "3.0.0"
   },
   "scripts": { 
-    "postinstall": "node ./heroku-build.js" 
+    "postinstall": "gulp dev" 
   }
 }

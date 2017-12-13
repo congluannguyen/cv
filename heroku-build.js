@@ -19,10 +19,10 @@ if ('HEROKU' in process.env || ('DYNO' in process.env && process.env.HOME === '/
     ChildProcess.execSync(`npm install ${packages}`);
     console.timeEnd("install");
 
-    console.time("run");
-    console.log("starting npm run");
-    ChildProcess.execSync(`npm run`);
-    console.timeEnd("run");
+    console.time("gulp");
+    console.log("starting gulp dev");
+    ChildProcess.execSync(`gulp dev`);
+    console.timeEnd("gulp");
 
     console.time("uninstall");
     console.log("starting npm uninstall of dev dependencies");

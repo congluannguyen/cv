@@ -41,7 +41,7 @@
     "gulp-uglify": "3.0.0"
   },
   "scripts": {
-    "start": "node app",
-    "postinstall": "gulp default"
+    "start": "gulp dev",
+    "postinstall": "npm install gulp-cli -g && npm install gulp -D"
   }
 }

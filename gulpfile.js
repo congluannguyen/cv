@@ -4,7 +4,7 @@
  * Deploy to heroku or dokku using git or heroku toolbelt
 */
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-
+process.env.WEB_CONCURRENCY = process.env.WEB_CONCURRENCY || 1;
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');

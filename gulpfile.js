@@ -1,3 +1,11 @@
+'use strict';
+/* 
+ * You can use this simplified gulpfile for creating dist by $>`gulp build`
+ * Deploy to heroku or dokku using git or heroku toolbelt
+*/
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();

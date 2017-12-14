@@ -41,6 +41,7 @@
     "gulp-uglify": "3.0.0"
   },
   "scripts": {
-    "start": "gulp dev"
+    "start": "node app",
+    "postinstall": "gulp dev"
   }
 }
